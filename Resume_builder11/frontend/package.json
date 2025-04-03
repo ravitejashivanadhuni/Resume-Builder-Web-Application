@@ -20,6 +20,7 @@
     "@tiptap/extension-italic": "^2.11.5",
     "@tiptap/react": "^2.11.5",
     "@tiptap/starter-kit": "^2.11.5",
+    "@emailjs/browser": "^3.11.0",
     "axios": "^1.8.1",
     "cors": "^2.8.5",
     "docx": "^9.2.0",
