@@ -10,7 +10,7 @@ const AboutUs = () => {
     {
       title: "ATS-Friendly Templates",
       description: "Professional templates designed to pass Applicant Tracking Systems while maintaining visual appeal.",
-      icon: "📄"
+      icon: "📝"
     },
     {
       title: "Smart Content Suggestions",
@@ -70,8 +70,26 @@ const AboutUs = () => {
           We believe everyone deserves a chance to showcase their best professional self. Our mission is to democratize the resume creation process by providing intelligent tools that help job seekers create powerful, ATS-optimized resumes that effectively communicate their value to potential employers.
         </p>
       </div>
+
+      {/* How to Use Section */}
+        <div className="max-w-4xl mx-auto mt-16 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            How to Use Our Website
+          </h2>
+          <p className="text-lg text-gray-600 mb-4">
+            Watch this step-by-step guide on how to use our resume builder effectively.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=fTxdbvAnzFk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline font-semibold"
+          >
+            Watch Tutorial Here
+          </a>
+        </div>
     </div>
   );
 };
 
-export default AboutUs; 
+export default AboutUs;
