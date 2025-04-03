@@ -29,19 +29,24 @@ import MyProjects from './pages/user/MyProjects'
 import ResumeBuilder from './pages/user/ResumeBuilder'
 import Templates from './pages/user/Templates'
 import UpgradeResume from './pages/user/UpgradeResume'
+import Resumetips from './pages/user/Resumetips'
+import CareerAdvice from './pages/user/CareerAdvice';
+import FAQ from './pages/user/FAQ';
 
 const App = () => {
   return (
     <>
       <Routes>
-        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<PublicRoute><Auth /></PublicRoute>} />
         <Route path="/forgot-password" element={<PublicRoute><ForgotPassword /></PublicRoute>} />
         <Route path="/verify-otp" element={<PublicRoute><OtpScreen /></PublicRoute>} />
         <Route path="/reset-password" element={<PublicRoute><ResetPassword /></PublicRoute>} />
+        <Route path ='/resumetips' element={<Resumetips />} />
+        <Route path="/career-advice" element={<CareerAdvice />} />
+        <Route path='/faq' element={<FAQ />} />
 
-        {/* Protected User Routes */}
+
         <Route path='/user' element={<ProtectedRoute><UserMain /></ProtectedRoute>}>
           <Route index element={<Home />} />
           <Route path='home' element={<Home />} />
