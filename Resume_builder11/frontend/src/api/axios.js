@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with base configuration
 export const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL || 'http://localhost:9000',
+  baseURL: import.meta.env.VITE_BASE_URL || 'https://resumesbyhirely-rspb.onrender.com',
   headers: {
     "Content-Type": "application/json"
   },
