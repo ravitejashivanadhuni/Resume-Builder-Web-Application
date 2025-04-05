@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import GoogleAd from "../../../component/GoogleAd";
+import GoogleAd from "@/component/GoogleAd";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
