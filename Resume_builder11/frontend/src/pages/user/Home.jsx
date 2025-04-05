@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import GoogleAd from "../component/GoogleAd";
 
 const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -171,7 +172,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {/* Google Ad after Features */}
+      <div className="my-8 flex justify-center">
+        <GoogleAd />
+      </div>
       {/* Why Choose Us Section */}
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
