@@ -1,17 +1,19 @@
 const nodemailer = require("nodemailer");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const transPorter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "resumesbyhirely@gmail.com",
-    pass: "ulzsjqbtlrclwqgx",
+    user: process.env.MAIL_USER ,
+    pass: process.env.MAIL_PASS ,
   },
 });
 
 async function senData(to, subject, html) {
   try {
     const mailFormat = {
-      from: "resumesbyhirely@gmail.com",
+      from: process.env.MAIL_USER,
       to: to,
       subject: subject,
       html: html,
